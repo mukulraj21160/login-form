@@ -11,7 +11,7 @@ const useStyle = makeStyles((theme) => ({
     alignItems: "center",
     justifyContent: "center",
     // backgroundImage: "url(" + backgroundimg + ")",
-    backgroundColor: "#06224a",
+    backgroundColor: "#6807f9",
     backgroundSize: "cover",
     backgroundPosition: "center",
     perspective: "1000px",
@@ -19,7 +19,7 @@ const useStyle = makeStyles((theme) => ({
   form: {
     height: "430px",
     width: "350px",
-    background: "#f63838",
+    background: "#fab95b",
     textAlign: "center",
     alignItems: "center",
     borderRadius: "5px",
@@ -121,7 +121,7 @@ const Form = () => {
             ></input>
             <Button
               className={classes.btn}
-              variant="contained"
+              variant="outlined"
               onClick={updated}
             >
               Log in
