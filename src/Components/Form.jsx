@@ -9,7 +9,7 @@ const useStyle = makeStyles((theme) => ({
     width: "100vw",
     display: "flex",
     alignItems: "center",
-    justifyContent: "center",
+    justifyContent: "space-evenly",
     // backgroundImage: "url(" + backgroundimg + ")",
     backgroundColor: "#6807f9",
     backgroundSize: "cover",
