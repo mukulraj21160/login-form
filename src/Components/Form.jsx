@@ -273,11 +273,23 @@ const Form = () => {
     setPassword(event.target.value);
   };
 
-  const updated = () => {
-    setName("");
-    // setEmail("");
-    // setPassword("");
+  const handleSubmit = () => {
+    if (name === "") {
+      alert("NAME IS EMPTY");
+    }
+    if (password === "") {
+      alert("PASSWORD IS EMPTY");
+    }
+    if (email === "") {
+      alert("EMAIL IS EMPTY");
+    }
   };
+
+  // const updated = () => {
+  //   setName("");
+  //   // setEmail("");
+  //   // setPassword("");
+  // };
   return (
     <div className={classes.form_container}>
       <Grid container item>
@@ -292,6 +304,8 @@ const Form = () => {
         >
           <form
             className={classes.form}
+            noValidate
+            autoComplete="off"
             style={{ textAlign: "center", transformStyle: "preserve-3d" }}
           >
             <h3 className={classes.heading}>Login Form</h3>
@@ -319,7 +333,7 @@ const Form = () => {
             <Button
               className={classes.btn}
               variant="outlined"
-              onClick={updated}
+              onClick={handleSubmit}
             >
               Log in
             </Button>
