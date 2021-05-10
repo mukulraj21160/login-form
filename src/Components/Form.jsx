@@ -1,37 +1,17 @@
 import React, { useState } from "react";
 import { Button, Grid, makeStyles } from "@material-ui/core";
-import backgroundimg from "../Assets/car.jpg";
 
 const useStyle = makeStyles((theme) => ({
   form_container: {
-    fontFamily: theme.typography.body1.fontFamily,
-    [theme.breakpoints.up("xs")]: {
-      fontFamily: "Sacramento, cursive",
-      minHeight: "100vh",
-      width: "100vw",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "space-evenly",
-      backgroundImage: "url(" + backgroundimg + ")",
-      // backgroundColor: "#6807f9",
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-      perspective: "1000px",
-    },
-    [theme.breakpoints.up("sm")]: {
-      fontFamily: "Sacramento, cursive",
-      minHeight: "100vh",
-      width: "100vw",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "space-evenly",
-      backgroundImage: "url(" + backgroundimg + ")",
-      // backgroundColor: "#6807f9",
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-      perspective: "1000px",
-    },
-
+    fontFamily: "Sacramento, cursive",
+    minHeight: "100vh",
+    width: "100vw",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-evenly",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    perspective: "1000px",
     [theme.breakpoints.up("md")]: {
       fontFamily: "Sacramento, cursive",
       minHeight: "100vh",
@@ -39,8 +19,6 @@ const useStyle = makeStyles((theme) => ({
       display: "flex",
       alignItems: "center",
       justifyContent: "space-evenly",
-      backgroundImage: "url(" + backgroundimg + ")",
-      // backgroundColor: "#6807f9",
       backgroundSize: "cover",
       backgroundPosition: "center",
       perspective: "1000px",
@@ -52,45 +30,26 @@ const useStyle = makeStyles((theme) => ({
       display: "flex",
       alignItems: "center",
       justifyContent: "space-evenly",
-      backgroundImage: "url(" + backgroundimg + ")",
-      // backgroundColor: "#6807f9",
       backgroundSize: "cover",
       backgroundPosition: "center",
       perspective: "1000px",
     },
   },
   form: {
-    fontFamily: theme.typography.body1.fontFamily,
-    [theme.breakpoints.up("xs")]: {
-      height: "430px",
-      width: "350px",
-      background: "rgba(255,255,255,.1)",
-      textAlign: "center",
-      alignItems: "center",
-      borderRadius: "5px",
-      boxShadow: "0 5px 15px rgba (0,0,0,.3) ",
-      borderTop: "1px solid rgba (255,255,255,.3) ",
-      borderLeft: "1px solid rgba (255,255,255,.3) ",
-      backdropFilter: "blur (10px) ",
-      transformStyle: "preserve-3d",
-    },
-    [theme.breakpoints.up("sm")]: {
-      height: "430px",
-      width: "350px",
-      background: "rgba(255,255,255,.1)",
-      textAlign: "center",
-      alignItems: "center",
-      borderRadius: "5px",
-      boxShadow: "0 5px 15px rgba (0,0,0,.3) ",
-      borderTop: "1px solid rgba (255,255,255,.3) ",
-      borderLeft: "1px solid rgba (255,255,255,.3) ",
-      backdropFilter: "blur (10px) ",
-      transformStyle: "preserve-3d",
-    },
-
+    height: "410px",
+    width: "270px",
+    background: "rgba(255,255,255,.1)",
+    textAlign: "center",
+    alignItems: "center",
+    borderRadius: "5px",
+    boxShadow: "0 5px 15px rgba (0,0,0,.3) ",
+    borderTop: "1px solid rgba (255,255,255,.3) ",
+    borderLeft: "1px solid rgba (255,255,255,.3) ",
+    backdropFilter: "blur (10px) ",
+    transformStyle: "preserve-3d",
     [theme.breakpoints.up("md")]: {
-      height: "430px",
-      width: "350px",
+      height: "410px",
+      width: "280px",
       background: "rgba(255,255,255,.1)",
       textAlign: "center",
       alignItems: "center",
@@ -116,18 +75,9 @@ const useStyle = makeStyles((theme) => ({
     },
   },
   heading: {
-    fontFamily: theme.typography.body1.fontFamily,
-    [theme.breakpoints.up("xs")]: {
-      fontSize: "30px",
-      color: "#fff",
-      letterSpacing: "3px",
-    },
-    [theme.breakpoints.up("sm")]: {
-      fontSize: "30px",
-      color: "#fff",
-      letterSpacing: "3px",
-    },
-
+    fontSize: "30px",
+    color: "#fff",
+    letterSpacing: "3px",
     [theme.breakpoints.up("md")]: {
       fontSize: "30px",
       color: "#fff",
@@ -140,36 +90,18 @@ const useStyle = makeStyles((theme) => ({
     },
   },
   input_Data: {
-    fontFamily: theme.typography.body1.fontFamily,
-    [theme.breakpoints.up("xs")]: {
-      outline: "none",
-      border: "none",
-      height: "40px",
-      width: "82%",
-      background: "rgba (0,0,0,.1) ",
-      color: "rgba (255,255,255,.7) ",
-      boxShadow: "0 0 5px rgba(0,0,0,.5) inset",
-      fontSize: "17px",
-      padding: "0 10px",
-      margin: "15px 0",
-      letterSpacing: "1px",
-      borderRadius: "15px",
-    },
-    [theme.breakpoints.up("sm")]: {
-      outline: "none",
-      border: "none",
-      height: "40px",
-      width: "82%",
-      background: "rgba (0,0,0,.1) ",
-      color: "rgba (255,255,255,.7) ",
-      boxShadow: "0 0 5px rgba(0,0,0,.5) inset",
-      fontSize: "17px",
-      padding: "0 10px",
-      margin: "15px 0",
-      letterSpacing: "1px",
-      borderRadius: "15px",
-    },
-
+    outline: "none",
+    border: "none",
+    height: "40px",
+    width: "82%",
+    background: "rgba (0,0,0,.1) ",
+    color: "rgba (255,255,255,.7) ",
+    boxShadow: "0 0 5px rgba(0,0,0,.5) inset",
+    fontSize: "17px",
+    padding: "0 10px",
+    margin: "15px 0",
+    letterSpacing: "1px",
+    borderRadius: "15px",
     [theme.breakpoints.up("md")]: {
       outline: "none",
       border: "none",
@@ -200,34 +132,18 @@ const useStyle = makeStyles((theme) => ({
     },
   },
   btn: {
-    fontFamily: theme.typography.body1.fontFamily,
-    [theme.breakpoints.up("xs")]: {
-      fontSize: "20px",
-      fontWeight: "bold",
-      width: "90%",
-      backgroundColor: "#2e3b65",
+    fontSize: "20px",
+    fontWeight: "bold",
+    width: "90%",
+    backgroundColor: "#2e3b65",
+    color: "#fff",
+    "&:hover": {
       color: "#fff",
-      "&:hover": {
-        color: "#000",
-      },
-      cursor: "pointer",
-      marginTop: "30px",
-      borderRadius: "10px",
-    },
-    [theme.breakpoints.up("sm")]: {
-      fontSize: "20px",
-      fontWeight: "bold",
-      width: "90%",
       backgroundColor: "#2e3b65",
-      color: "#fff",
-      "&:hover": {
-        color: "#000",
-      },
-      cursor: "pointer",
-      marginTop: "30px",
-      borderRadius: "10px",
     },
-
+    cursor: "pointer",
+    marginTop: "30px",
+    borderRadius: "10px",
     [theme.breakpoints.up("md")]: {
       fontSize: "20px",
       fontWeight: "bold",
@@ -235,7 +151,8 @@ const useStyle = makeStyles((theme) => ({
       backgroundColor: "#2e3b65",
       color: "#fff",
       "&:hover": {
-        color: "#000",
+        color: "#fff",
+        backgroundColor: "#2e3b65",
       },
       cursor: "pointer",
       marginTop: "30px",
@@ -248,7 +165,8 @@ const useStyle = makeStyles((theme) => ({
       backgroundColor: "#2e3b65",
       color: "#fff",
       "&:hover": {
-        color: "#000",
+        color: "#fff",
+        backgroundColor: "#2e3b65",
       },
       cursor: "pointer",
       marginTop: "30px",
@@ -275,30 +193,24 @@ const Form = () => {
 
   const handleSubmit = () => {
     if (name === "") {
-      alert("NAME IS EMPTY");
-    }
-    if (password === "") {
-      alert("PASSWORD IS EMPTY");
+      alert("USERNAME IS EMPTY");
     }
     if (email === "") {
       alert("EMAIL IS EMPTY");
     }
+    if (password === "") {
+      alert("PASSWORD IS EMPTY");
+    }
   };
 
-  // const updated = () => {
-  //   setName("");
-  //   // setEmail("");
-  //   // setPassword("");
-  // };
   return (
     <div className={classes.form_container}>
       <Grid container item>
-        <Grid item lg={4} md={4} sm={1} xs={1}></Grid>
+        <Grid item lg={4} md={4} xs={1}></Grid>
         <Grid
           item
           lg={4}
           md={4}
-          sm={10}
           xs={10}
           style={{ display: "flex", justifyContent: "space-evenly" }}
         >
@@ -332,14 +244,14 @@ const Form = () => {
             ></input>
             <Button
               className={classes.btn}
-              variant="outlined"
+              variant="contained"
               onClick={handleSubmit}
             >
               Log in
             </Button>
           </form>
         </Grid>
-        <Grid item lg={4} md={4} sm={1} xs={1}></Grid>
+        <Grid item lg={4} md={4} xs={1}></Grid>
       </Grid>
     </div>
   );
